@@ -1,22 +1,19 @@
 <div class="homepage-bg" style="background-image: url('');">
-  <div class="container-fluid text-light py-5 bg-secondary">
+  <div class="container-fluid text-secondary py-5 bg-light">
     <div class="row">
-      <div class="col-lg-6">
+      <div class="">
         <h1 class="text-center mb-4">Your Movies List</h1>
         <ul class="list-group">
           <% @lists.each do |list| %>
           <li class="list-group-item bg-transparent border-0">
-            <%= link_to list.name, list_path(list), class: "text-light h4" %>
+      <div class="card">
+        <div class="card-body col-sm-4">
+        <h4 class="text-secondary h4"><%= link_to list.name, list_path(list)%> </h4>
+        </div>
+      </div>
           </li>
           <% end %>
         </ul>
-      </div>
-      <div class="col-lg-6 d-none d-lg-block">
-        <div class="d-flex flex-column align-items-center justify-content-center h-100">
-        <img src="https://image.tmdb.org/t/p/w500//qJ2tW6WMUDux911r6m7haRef0WH.jpg" alt="" class="img-fluid mb-3">
-        <img src="https://image.tmdb.org/t/p/w500//3bhkrj58Vtu7enYsRolD1fZdja1.jpg" alt="" class="img-fluid mb-3">
-        <img src="https://image.tmdb.org/t/p/w500//lyQBXzOQSuE59IsHyhrp0qIiPAz.jpg" alt="" class="img-fluid">
-      </div>
     </div>
   </div>
 </div>
