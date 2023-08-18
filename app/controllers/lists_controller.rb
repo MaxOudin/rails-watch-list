@@ -28,7 +28,5 @@ class ListsController < ApplicationController
 
   def set_params
     params.require(:list).permit(:name)
-    params.require(:movie).permit(:title, :overview, :rating, :poster_url)
-    params.require(:bookmark).permit(:comment)
   end
 end

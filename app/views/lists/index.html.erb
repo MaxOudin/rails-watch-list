@@ -7,8 +7,9 @@
           <% @lists.each do |list| %>
           <li class="list-group-item bg-transparent border-0">
       <div class="card">
-        <div class="card-body col-sm-4">
-        <h4 class="text-secondary h4"><%= link_to list.name, list_path(list)%> </h4>
+       <div class="card-body col-sm-4 d-flex align-items-center">
+        <h4 class="text-secondary h4 text-decoration-none"><%= list.name %></h4>
+        <a href="http://localhost:3000/lists/<%= list.id %>" class="ml-2"><i class="fa-solid fa-film"></i></a>
         </div>
       </div>
           </li>
