@@ -5,6 +5,21 @@
   text-decoration: none;
 }
 
+.card-category {
+  height: 300px;
+  display: flex;
+  align-content: center;
+}
+
+.titre {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border: 1px;
+  border-radius: 2px;
+  box-shadow: 1px, 1px, 1px, black;
+}
+
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {
   .cards {
